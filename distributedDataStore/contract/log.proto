@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option go_package = "personalMonorepo/distributedDataStore/contract";
+
+package contract;
+
+message LogEntry {
+  uint32 op = 1;
+  string key = 2;
+  bytes value = 3;
+}
